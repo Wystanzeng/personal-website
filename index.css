@@ -150,6 +150,81 @@ body {
   display: none;
 }
 
+.resume h2 {
+  margin-left: 15%;
+  font-size: 32px;
+}
+
+.resume h3 {
+  margin-left: 18%;
+}
+
+.timelines {
+  border-left: 4px solid #dadada;
+  padding: 8px 0 8px 48px;
+  margin: 0 20%;
+}
+
+.timelines > div {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.timeline {
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  border-left: 10px solid #2194E0;
+  margin-left: -15px;
+}
+
+.timeline::before {
+  content: "";
+  width: 48px;
+  border-bottom: 2px solid #2194E0;
+  position: absolute;
+  left: -48px;
+  top: 8px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  left: -52px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 2px solid #2194E0;
+  top: 2px;
+  background: white;
+}
+
+.experience__title {
+  margin: 0 0 8px;
+}
+
+.experience__meta {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.experience__year {
+  color: #2194E0;
+}
+
+.experience__divider {
+  border-right: 1px solid #dadada;
+}
+
+.experience__provider {
+  color: #2194E0;
+}
+
+.experience__description {
+  line-height: 1.75;
+}
+
 .services {
   display: none;
   padding: 5% 20%;
