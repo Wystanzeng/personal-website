@@ -1,0 +1,165 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #020b2b;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__log {
+  color: white;
+  white-space: nowrap;
+  margin-left: 5%;
+  flex: 0.9;
+  font-size: 22px;
+}
+
+.navigation__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0%;
+  justify-content: space-evenly;
+}
+
+.navigation__list-item {
+  color: white;
+  padding: 2.5% 5%;
+  margin: 0%;
+}
+
+.navigation__list-item:hover {
+  background-color: white;
+  color: black;
+}
+
+.navigation__active {
+  background-color: white;
+  color: black;
+}
+
+#page-active {
+  display: block;
+}
+
+.home {
+  display: none;
+}
+
+.home__introduction {
+  display: flex;
+  text-align: center;
+  padding: 32px 128px;
+}
+
+.home__introduction-photo {
+  width: 240px;
+  height: 300px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.home__introduction-aboutme {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.75;
+  margin-bottom: 5%;
+}
+
+.home__introduction-icon {
+  font-size: 30px;
+}
+
+.home__introduction-icon i {
+  padding: 0 2%;
+}
+
+.home__introduction div {
+  justify-content: center;
+}
+
+.home__contact {
+  display: flex;
+  padding: 32px 128px;
+  margin-bottom: 5%;
+}
+
+.home__contact td {
+  padding: 2px 0;
+}
+
+.home__contact td:first-of-type {
+  padding-right: 42px;
+}
+
+.home__contact div {
+  display: flex;
+}
+
+.home__contact-button {
+  margin-left: 20%;
+  margin-right: 10%;
+  text-align: center;
+  text-decoration: none;
+  width: 156px;
+  height: 48px;
+  line-height: 48px;
+  color: #2194E0;
+  border: 2px solid #2194E0;
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 0.3em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.home__contact-button:hover {
+  background-color: #2194E0;
+  color: #fff;
+  border-bottom: 4px solid #1977b5;
+}
+
+.home__contact-button:hover:before {
+  -webkit-transform: skewX(-45deg) translateX(13.5em);
+  transform: skewX(-45deg) translateX(13.5em);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.home__contact-button:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  -webkit-transform: skewX(-45deg) translateX(0);
+  transform: skewX(-45deg) translateX(0);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.resume {
+  display: none;
+}
+
+.services {
+  display: none;
+  padding: 5% 20%;
+}
+
+.blog {
+  display: none;
+  padding: 5% 20%;
+}
+
+.contact {
+  display: none;
+}
