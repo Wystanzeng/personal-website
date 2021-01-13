@@ -177,6 +177,7 @@ body {
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   border-left: 10px solid #2194E0;
   margin-left: -15px;
+  display: flex;
 }
 
 .timeline::before {
@@ -200,28 +201,42 @@ body {
   background: white;
 }
 
-.experience__title {
+.timeline__log {
+  width: 128px;
+  height: 128px;
+  margin-right: 24px;
+}
+
+.timeline__education {
+  margin-top: -12px;
+}
+
+.timeline__working {
+  flex-direction: column;
+}
+
+.timeline__working-title {
   margin: 0 0 8px;
 }
 
-.experience__meta {
+.timeline__working-meta {
   font-size: 0.8rem;
   margin-bottom: 8px;
 }
 
-.experience__year {
+.timeline__working-year {
   color: #2194E0;
 }
 
-.experience__divider {
+.timeline__working-divider {
   border-right: 1px solid #dadada;
 }
 
-.experience__provider {
+.timeline__working-provider {
   color: #2194E0;
 }
 
-.experience__description {
+.timeline__working-description {
   line-height: 1.75;
 }
 
@@ -237,4 +252,64 @@ body {
 
 .contact {
   display: none;
+  margin-top: 3%;
+}
+
+.contact > div {
+  display: flex;
+}
+
+.contact__map {
+  margin-left: 12%;
+}
+
+.contact__map table {
+  margin: 2% 0;
+}
+
+.contact__map table tr {
+  margin-bottom: 4%;
+}
+
+.contact__form {
+  margin-left: 12%;
+}
+
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form-input {
+  border: none;
+  margin-bottom: 5%;
+  box-shadow: 2px 2px 5px lightgrey;
+  border-radius: 4px;
+  padding: 5% 3%;
+  width: 360px;
+}
+
+.contact__form-textinput {
+  border: none;
+  margin-bottom: 5%;
+  width: 360px;
+  height: 120px;
+  border-radius: 4px;
+  padding: 5% 3%;
+  box-shadow: 2px 2px 5px lightgrey;
+  font-family: Arial;
+}
+
+.contact__form-submission {
+  border: none;
+  background-color: #1c2e81;
+  color: white;
+  border-radius: 4px;
+  padding: 3% 2%;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 500;
 }
