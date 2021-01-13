@@ -140,8 +140,9 @@ body{
     & h3 {
         margin-left: 18%;
     }
-    
 }
+
+
 
 .timelines{
     border-left: 4px solid #dadada;
@@ -160,6 +161,7 @@ body{
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
     border-left: 10px solid#2194E0;
     margin-left: -15px;
+    display: flex;
     &::before {
         content: "";
         width: 48px;
@@ -179,34 +181,46 @@ body{
         top: 2px;
         background: white;
     }
+    &__log {
+        width: 128px;
+        height: 128px;
+        margin-right: 24px;
+    }
+
+    &__education {
+        margin-top: -12px;
+
+    }
+    &__working {
+        flex-direction: column;
+        &-title {
+            margin: 0 0 8px;
+        }
+    
+        &-meta {
+            font-size: 0.8rem;
+            margin-bottom: 8px;
+        }
+    
+        &-year {
+            color: #2194E0;
+        }
+    
+        &-divider {
+            border-right: 1px solid #dadada;
+        }
+    
+        &-provider {
+            color: #2194E0;
+        }
+    
+        &-description {
+            line-height: 1.75;
+        }
+    }
 }
 
-.experience {
-    &__title {
-        margin: 0 0 8px;
-    }
 
-    &__meta {
-        font-size: 0.8rem;
-        margin-bottom: 8px;
-    }
-
-    &__year {
-        color: #2194E0;
-    }
-
-    &__divider {
-        border-right: 1px solid #dadada;
-    }
-
-    &__provider {
-        color: #2194E0;
-    }
-
-    &__description {
-        line-height: 1.75;
-    }
-}
 .services {
     display: none;
     padding: 5% 20%;
@@ -219,4 +233,62 @@ body{
 
 .contact {
     display: none;
+    margin-top: 3%;
+    & > div {
+        display: flex;
+    }
+    &__map {
+        margin-left: 12%;
+        & table {
+            margin: 2% 0;
+            & tr {
+                margin-bottom: 4%;
+            }
+        }
+
+    }
+    &__form {
+        margin-left: 12%;
+        & form {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        &-input {
+            border: none;
+            margin-bottom: 5%;
+            box-shadow: 2px 2px 5px lightgrey;
+            border-radius: 4px;
+            padding: 5% 3% ;
+            width: 360px
+
+        }
+        
+        &-textinput{
+            border: none;
+            margin-bottom: 5%;
+            width: 360px;
+            height: 120px;
+            border-radius: 4px;
+            padding: 5% 3% ;
+            box-shadow: 2px 2px 5px lightgrey;
+            font-family: Arial
+        }
+
+        &-submission {
+            border: none;
+            background-color: rgb(28, 46, 129);
+            color:white;
+            border-radius: 4px;
+            padding: 3% 2%;
+            width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
 }
